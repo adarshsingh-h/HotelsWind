@@ -1,0 +1,69 @@
+.cover {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.8rem;
+}
+.input {
+    font-size: 2rem;
+    height: 4rem;
+    width: 30rem;
+    background-color: #ecf8f9;
+    color: rgb(36, 36, 36);
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+.inputs > label {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+.button > button {
+    border: 2px solid #d9f1f3;
+    background-color: #d9f1f3;
+    transition: all 0.2s;
+    height: 4rem;
+}
+.button > button:hover {
+    border-color: rgb(36, 36, 36);
+}
+
+@media (max-width: 72em) {
+    .input {
+        height: 3rem;
+        width: 24rem;
+    }
+    .inputs > label {
+        font-size: 1.4rem;
+    }
+    .button > button {
+        height: 3rem;
+    }
+}
+@media (max-width: 54em) {
+    .input {
+        height: 3rem;
+        width: 18rem;
+        font-size: 1.6rem;
+    }
+    .inputs > label {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 42em){ 
+    .cover {
+        flex-direction: column;
+        align-items: center;
+    }
+    .input {
+        height: 3rem;
+        width: 30rem;
+    }
+    .inputs > label {
+        font-size: 1.2rem;
+    }
+    .icon{
+        width: 4rem;
+        height: auto;
+    }
+}

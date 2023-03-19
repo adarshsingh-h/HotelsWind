@@ -1,0 +1,129 @@
+.nav {
+    display: flex;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.title > h2 {
+    font-size: 3.2rem;
+}
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    background-color: rgb(36, 36, 36);
+    color: #3fbac2;
+    padding: 1rem;
+    border-radius: 100rem;
+    color: #fff;
+    letter-spacing: 0.6px;
+    width: 45rem;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.link:hover {
+    background-color: #3fbac2;
+    color: rgb(36, 36, 36);
+}
+.bookings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+    padding-bottom: 10rem;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.content {
+    max-width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 1.8rem;
+}
+.content > h2 {
+    font-size: 3rem;
+}
+.icon {
+    width: 10rem;
+    height: auto;
+    color: #32959b;
+}
+.content > h3 {
+    font-size: 1.8rem;
+}
+.para {
+    font-size: 1.4rem;
+}
+.small,
+.small2 {
+    font-size: 1.2rem;
+}
+.small2 {
+    margin-top: -1.4rem;
+}
+.content > button {
+    border-radius: 6px;
+    color: rgb(36, 36, 36);
+    background-color: #3fbac2;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.content > button:hover {
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+    border: 2px solid rgb(36, 36, 36);
+}
+
+@media (max-width: 62em) {
+    .nav {
+        flex-direction: column;
+    }
+}
+@media (max-width: 35em) {
+    .title > h2 {
+        font-size: 2.8rem;
+    }
+    .link {
+        width: 30rem;
+        font-size: 1.8rem;
+    }
+    .content > h2 {
+        font-size: 2.2rem;
+    }
+    .icon {
+        width: 6rem;
+        height: auto;
+        color: #32959b;
+    }
+    .content > h3 {
+        font-size: 1.4rem;
+    }
+    .para {
+        font-size: 1.2rem;
+    }
+    .small,
+    .small2 {
+        font-size: 1rem;
+    }
+    .content > button {
+        font-size: 1.6rem;
+    }
+}

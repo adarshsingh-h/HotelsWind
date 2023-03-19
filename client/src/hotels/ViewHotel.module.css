@@ -1,0 +1,175 @@
+.main {
+    height: 88.77vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ecf8f9;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    max-width: 130rem;
+    margin: 0 auto;
+}
+.card > header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3fbac2;
+    padding: 1.6rem 0;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+}
+.card > header > h2 {
+    font-size: 5.2rem;
+}
+.img {
+    width: 65rem;
+    height: auto;
+}
+.card > article {
+    display: flex;
+    gap: 4.4rem;
+    padding: 3.2rem 1.6rem;
+    background-color: rgb(36, 36, 36);
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    width: 40rem;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    color: #fff;
+}
+.text > p {
+    font-size: 2.4rem;
+}
+.price {
+    color: #3fbac2;
+    background-color: #fff;
+    width: fit-content;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.location {
+    color: #3fbac2;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.content > button {
+    width: fit-content;
+}
+
+@media (max-width: 72em) {
+    .img {
+        width: 50rem;
+        height: 40rem;
+    }
+    .content {
+        gap: 3rem;
+        width: 30rem;
+    }
+    .card > header > h2 {
+        font-size: 4rem;
+    }
+    .text > p {
+        font-size: 1.8rem;
+    }
+    .card > article {
+        gap: 3.2rem;
+    }
+    .text {
+        gap: 2.4rem;
+    }
+}
+@media (max-width: 62em) {
+    .img {
+        width: 40rem;
+        height: 30rem;
+    }
+    .content {
+        gap: 2rem;
+        width: 25rem;
+    }
+    .card > header > h2 {
+        font-size: 3.4rem;
+    }
+    .text > p {
+        font-size: 1.6rem;
+    }
+    .card > article {
+        gap: 2.4rem;
+    }
+    .text {
+        gap: 1.8rem;
+    }
+}
+@media (max-width: 54em) {
+    .img {
+        width: 36rem;
+        height: auto;
+    }
+    .content {
+        gap: 1.2rem;
+        width: 36rem;
+        align-items: center;
+    }
+    .card > header > h2 {
+        font-size: 2.6rem;
+    }
+    .text > p {
+        font-size: 1.4rem;
+    }
+    .card > article {
+        gap: 2.4rem;
+        flex-direction: column;
+        padding: 2rem 1.6rem;
+    }
+    .text {
+        gap: 1.8rem;
+        width: 36rem;
+        text-align: center;
+        align-items: center;
+    }
+    .content > button {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 35em) {
+    .img {
+        width: 30rem;
+        height: auto;
+    }
+    .content {
+        gap: 1.2rem;
+        width: 30rem;
+    }
+    .card > header > h2 {
+        font-size: 2.6rem;
+    }
+    .text > p {
+        font-size: 1.4rem;
+    }
+    .card > article {
+        gap: 2.4rem;
+    }
+    .text {
+        gap: 1.4rem;
+        width: 30rem;
+    }
+    .content > button {
+        font-size: 1.4rem;
+    }
+    .card > header {
+        padding: 0.8rem 0;
+    }
+}

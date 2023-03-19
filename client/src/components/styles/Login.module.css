@@ -1,0 +1,149 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    height: 88.77vh;
+    justify-content: center;
+    align-items: center;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 5rem;
+}
+.main {
+    display: flex;
+    width: 100rem;
+    justify-content: space-between;
+    border-radius: 3rem;
+    overflow: hidden;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.image > img {
+    height: 100%;
+    width: auto;
+}
+.text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.8rem;
+    color: #3fbac2;
+    background-color: rgb(36, 36, 36);
+}
+.text > h1 {
+    font-size: 5.2rem;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.inputs > label {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.inputs > input {
+    font-size: 2.4rem;
+    height: 3.6rem;
+    width: 34rem;
+    background-color: #d9f1f3;
+    border-radius: 6px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    align-items: center;
+}
+.form > button {
+    height: 3.6rem;
+    margin-top: 3.6rem;
+    width: 60%;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    background-color: #3fbac2;
+    color: rgb(36, 36, 36);
+}
+.form > button:hover {
+    background-color: #d9f1f3;
+    color: rgb(36, 36, 36);
+    border: 3px solid #3fbac2;
+}
+
+@media (max-width: 72em) {
+    .main {
+        width: 80rem;
+    }
+    .image > img {
+        height: 50rem;
+    }
+    .inputs > input {
+        width: 26rem;
+        height: 3.4rem;
+        font-size: 2rem;
+    }
+    .inputs > label {
+        font-size: 1.6rem;
+    }
+    .form > button {
+        height: 3.2rem;
+        font-size: 2rem;
+    }
+}
+@media (max-width: 54em) {
+    .main {
+        width: 65rem;
+    }
+    .image > img {
+        height: 42rem;
+    }
+    .inputs > input {
+        width: 20rem;
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+    .inputs > label {
+        font-size: 1.4rem;
+    }
+    .form > button {
+        height: 3.2rem;
+        font-size: 1.8rem;
+    }
+    .text > h1 {
+        font-size: 4rem;
+    }
+    .form {
+        gap: 1.6rem;
+    }
+}
+@media (max-width: 42em) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 36rem;
+    }
+    .image > img {
+        content: url(../../images/login_720x291.jpg);
+        width: 36rem;
+        height: auto;
+    }
+    .text {
+        padding: 5rem 0;
+    }
+    .inputs > input {
+        width: 25rem;
+    }
+    .inputs > label {
+        font-size: 1.4rem;
+    }
+    .form > button {
+        height: 3.2rem;
+        font-size: 1.8rem;
+    }
+    .text > h1 {
+        font-size: 3.8rem;
+    }
+}

@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    width: 40vw;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6.4rem;
+    list-style: none;
+    background-color: #9fdde1;
+}
+
+.main > li > a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(36, 36, 36);
+    transition: all 0.3s;
+}
+.main > li > a:hover {
+    color: #2c8288;
+}
+
+.active {
+    border-bottom: 3px solid rgb(36, 36, 36);
+}
+
+@media (max-width: 62em) {
+    .main {
+        width: 100vw;
+        height: 5rem;
+    }
+    .main > li > a{
+        font-size: 1.6rem;
+    }
+}

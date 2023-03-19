@@ -1,0 +1,126 @@
+.hotel {
+    display: flex;
+    width: 100rem;
+    gap: 4rem;
+    padding: 2.4rem;
+    background-color: rgb(36, 36, 36);
+    border-radius: 1rem;
+    transition: all 0.3s;
+}
+.hotel:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+    transform: translateY(-0.6rem);
+}
+.img > img {
+    width: 40rem;
+    height: auto;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: space-between;
+    width: 100%;
+}
+.text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.description > h2 {
+    font-size: 2rem;
+}
+.text > h3 {
+    font-size: 2.4rem;
+}
+.text > p {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+}
+.location {
+    background-color: #c5eaed;
+    color: rgb(36, 36, 36);
+    padding: 0.4rem 0;
+    font-weight: 600;
+    padding-left: 0.4rem;
+}
+.price {
+    background-color: #3fbac2;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    color: rgb(36, 36, 36);
+}
+.btn > button {
+    background-color: #fff;
+    border-radius: 4px;
+    color: rgb(36, 36, 36);
+    font-size: 1.6rem;
+    padding: 0.6rem 1rem;
+}
+
+@media (max-width: 72em) {
+    .hotel {
+        width: 80rem;
+        gap: 2rem;
+    }
+    .description > h2 {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 54em) {
+    .hotel {
+        width: 60rem;
+        gap: 2.4rem;
+        padding: 1.6rem;
+    }
+    .img > img {
+        width: 30rem;
+        height: auto;
+    }
+    .content {
+        gap: 1.4rem;
+    }
+    .description > h2 {
+        font-size: 1.2rem;
+    }
+    .text > h3 {
+        font-size: 1.8rem;
+    }
+    .text > p {
+        font-size: 1.2rem;
+    }
+    .price {
+        font-size: 1.2rem;
+        padding: 0.6rem;
+    }
+    .btn > button {
+        font-size: 1.2rem;
+    }
+    .text {
+        gap: 0.6rem;
+    }
+}
+
+@media (max-width: 42em) {
+    .hotel {
+        flex-direction: column;
+        width: 35rem;
+    }
+    .description > h2 {
+        font-size: 1.1rem;
+    }
+    .img > img {
+        width: 32rem;
+        height: auto;
+    }
+}
